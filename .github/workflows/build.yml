@@ -5,6 +5,9 @@ on:
     branches:
       - main   # runs automatically on every commit to main branch
 
+permissions:
+  contents: write   # ✅ REQUIRED for creating GitHub releases
+
 jobs:
   build:
     runs-on: windows-latest
@@ -34,5 +37,6 @@ jobs:
           tag_name: v${{ github.run_number }}
           name: Auto Release v${{ github.run_number }}
           files: dist/Pending_Mygate_Tickets_Report.exe
+          generate_release_notes: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
