@@ -61,7 +61,7 @@ def get_count(cat, from_date, to_date, statuses):
     time.sleep(REQUEST_DELAY)
     return data["data"]["getAdminSrList"]["dataResponse"]["totalCount"]
 
-from_date="01-01-2026"
+from_date="01-01-2024"
 
 today=datetime.now().strftime("%d-%m-%Y")
 to_date=input(f"Report till date (DD-MM-YYYY) [Press Enter for Today ({today})]: ").strip()
