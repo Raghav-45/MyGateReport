@@ -9,7 +9,7 @@ from openpyxl import Workbook
 from openpyxl.styles import Font, PatternFill, Border, Side, Alignment
 from openpyxl.utils import get_column_letter
 
-TOKEN = "pHm9TbOJkg1UnlgiLsocYS7oF9tXhrcQAfs7lWmd3fiiPXiChouCjutf0ZxYG93U"
+TOKEN = "zr2Er9wrdfhTyiY01Lnvr03cje9oeeH7wR6XvFmeSR87okw1qW4QyAuRkoSaOkff"
 URL = "https://api.dashboard.mygate.com/graphql/"
 
 HEADERS = {
